@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06369bb8-15a6-4ff1-afc8-c00867584369" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1b5ROLrd8KgqwR5TkdCyXWG4l8a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="javaexample" />
+      <option name="PROGRAM_PARAMETERS" value="java Ladder x" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../Flink" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Scala_Spark_DataFrame" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06369bb8-15a6-4ff1-afc8-c00867584369" name="Default Changelist" comment="" />
+      <created>1587919935273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587919935273</updated>
+      <workItem from="1587919938361" duration="1860000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587921792618">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="360" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587921792618" />
+    <state x="369" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1587921566979" />
+    <state x="360" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.831@0.23.1440.831" timestamp="1587921709119" />
+    <state x="683" y="149" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1587921637373">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="683" y="149" key="#com.intellij.ide.macro.MacrosDialog/0.23.1440.830@0.23.1440.830" timestamp="1587921637373" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1587924630685">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587924630685" />
+    <state width="818" height="245" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1587921569787" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1587924630684">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587924630684" />
+    <state width="818" height="245" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1587921569787" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1587924630683">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587924630683" />
+    <state width="818" height="245" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1587921569786" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1587924630684">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587924630684" />
+    <state width="818" height="245" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1587921569787" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1587919938579">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587919938579" />
+  </component>
+</project>
