@@ -469,3 +469,50 @@ Building real-time streaming applications that transform or react to the streams
      If we shut down any Kafka Server, even including the Leader, the Kafka Server could still work as usual.
      
      ![Screenshot](images/kafka1.png)
+
+# Integrate Flume and Kafka to collect data
+
+## Configuration
+
+   Here we can make some changes on the avro-memory-logger.conf to create a new avro-memory-kafka.conf file.
+   
+   <pre>
+   # Name the components on this agent
+   avro-memory-kafka.sources = avro-source
+   avro-memory-kafka.sinks = kafka-sink
+   avro-memory-kafka.channels = memory-channel
+
+   # Describe/configure the source
+   avro-memory-kafka.sources.avro-source.type = avro
+   avro-memory-kafka.sources.avro-source.bind = localhost
+   avro-memory-kafka.sources.avro-source.port = 44444
+
+   # Describe the sink
+   avro-memory-kafka.sinks.kafka-sink.type = org.apache.flume.sink.kafka.KafkaSink
+   avro-memory-kafka.sinks.kafka-sink.topic = flume
+   avro-memory-kafka.sinks.kafka-sink.brokerList = localhost:9095
+   avro-memory-kafka.sinks.kafka-sink.batchSize = 5
+   avro-memory-kafka.sinks.kafka-sink.requiredAcks = 1
+
+
+   # Use a channel which buffers events in memory
+   avro-memory-kafka.channels.memory-channel.type = memory
+   avro-memory-kafka.channels.memory-channel.capacity = 1000
+   avro-memory-kafka.channels.memory-channel.transactionCapacity = 100
+
+   # Bind the source and sink to the channel
+   avro-memory-kafka.sources.avro-source.channels = memory-channel
+   avro-memory-kafka.sinks.kafka-sink.channel = memory-channel
+   </pre>
+   
+## Start a Kafka Consumer
+   <pre>
+   $ kafka-console-consumer.sh --zookeeper localhost:2181 --topic flume
+   </pre>
+
+## Load new data into the example.log file
+   <pre>
+   $ echo 1 >> example.log
+   </pre>
+   
+   Then the data will be consumed by Kafka Consumer.
