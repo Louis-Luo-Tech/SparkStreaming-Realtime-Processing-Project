@@ -465,3 +465,7 @@ Building real-time streaming applications that transform or react to the streams
      
      
 4. **Fault-Tolerant Test**
+
+     If we shut down any Kafka Server, even including the Leader, the Kafka Server could still work as usual.
+     
+     ![Screenshot](images/kafka1.png)
