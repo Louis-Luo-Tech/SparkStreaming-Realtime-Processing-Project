@@ -346,7 +346,7 @@ Building real-time streaming applications that transform or react to the streams
      </pre>
      
 3. **Configure Kafka**
-     Download Kafka(Note the version of Scala)
+     Download Kafka(Note the version of Scala, here we use 0.9.0.0)
      
      Export to PATH
      
@@ -361,7 +361,7 @@ Building real-time streaming applications that transform or react to the streams
      
      * Create a topic
      <pre>
-     $ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+     $ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafkatest
      </pre>
      
      * Check all the topics
@@ -371,12 +371,12 @@ Building real-time streaming applications that transform or react to the streams
      
      * Send some messages
      <pre>
-     $ kafka-console-producer.sh --broker-list localhost:9092 --topic test
+     $ kafka-console-producer.sh --broker-list localhost:9092 --topic kafkatest
      </pre>
      
      * Start a consumer
      <pre>
-     $ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+     $ kafka-console-consumer.sh --zookeeper localhost:2181 --topic kafkatest --from-beginning
      </pre>
      
      * Check the information of the topic
@@ -385,7 +385,7 @@ Building real-time streaming applications that transform or react to the streams
      </pre>
      
       <pre>
-     $ kafka-topics.sh --describe --zookeeper localhost:2181 --topic test
+     $ kafka-topics.sh --describe --zookeeper localhost:2181 --topic kafkatest
      </pre>
      
      Single node multi-broker cluster setup
@@ -419,9 +419,9 @@ Building real-time streaming applications that transform or react to the streams
      
      Start Kafka Server
      <pre>
-     $ kafka-server-start.sh $KAFKA_HOME/config/server-1.properties 
-     $ kafka-server-start.sh $KAFKA_HOME/config/server-2.properties
-     $ kafka-server-start.sh $KAFKA_HOME/config/server-3.properties
+     $ kafka-server-start.sh -daemon $KAFKA_HOME/config/server-1.properties 
+     $ kafka-server-start.sh -daemon $KAFKA_HOME/config/server-2.properties
+     $ kafka-server-start.sh -daemon $KAFKA_HOME/config/server-3.properties
      </pre>
      
      Create topic
@@ -436,7 +436,7 @@ Building real-time streaming applications that transform or react to the streams
      
      Start a consumer
      <pre>
-     $ kafka-console-consumer.sh --bootstrap-server localhost:9093,localhost:9094,localhost:9095, --topic my-replicated-topic --from-beginning
+     $ kafka-console-consumer.sh --zookeeper localhost:2181 --topic my-replicated-topic --from-beginning
      </pre>
      
 3. **Some errors**
@@ -464,3 +464,4 @@ Building real-time streaming applications that transform or react to the streams
      Start the Kafka Server again, then it works
      
      
+4. **Fault-Tolerant Test**
