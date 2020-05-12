@@ -1,3 +1,4 @@
-[debug] "not up to date. inChanged = true, force = false
+[warn] kafka_2.11-0.9.0.0-sources.jar no longer exists at /Users/xiangluo/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka_2.11/0.9.0.0/kafka_2.11-0.9.0.0-sources.jar
+[debug] "not up to date. inChanged = false, force = false
 [debug] Updating ProjectRef(uri("file:/Users/xiangluo/Documents/GitHub/SparkStreaming-Realtime-Processing-Project/"), "sparkstreaming-realtime-processing-project")...
 [debug] Done updating ProjectRef(uri("file:/Users/xiangluo/Documents/GitHub/SparkStreaming-Realtime-Processing-Project/"), "sparkstreaming-realtime-processing-project")
